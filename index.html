@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>giderTakip</title>
+    <link rel="stylesheet" href="style.css" /
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="margin-bottom: 5rem; text-align: center; color: crimson">
+        Gider Takip Uygulamasi
+      </h1>
+
+      <div style="height: 2rem" class="gelirEkle">
+        <input
+          class="gelirekle-input border"
+          type="text"
+          placeholder="  Gelir ekle..."
+          id="gelirekleInputBorder"
+        />
+        <button class="gelirekle-btn">Ekle</button>
+      </div>
+      <div style="margin-top: 2rem; padding: 0.5rem" class="main">
+        <div class="harcama-formu">
+          <h2 style="text-align: center; margin: 2rem auto">Harcama formu</h2>
+
+          <div class="harcama-detay">
+            <div class="harcama-yapilan">
+              <p>Harcama Yapilan Yer</p>
+              <input
+                class="harcama-yapilan-yer border"
+                type="text"
+                id="harcamaYapilanYer"
+              />
+            </div>
+            <div class="harcama-yapilan">
+              <p>Tarih</p>
+              <input
+                class="harcama-yapilan-tarih border"
+                type="date"
+                min="2023-01-01"
+                max="2023-12-31"
+                id="harcamaYapilanTarih"
+              />
+            </div>
+          </div>
+          <div
+            style="margin-top: 2rem; height: 4rem"
+            class="harcama-yapilan-miktar"
+          >
+            <p>Harcama Miktari</p>
+            <input
+              class="harcama-yapilan-miktar border"
+              type="text"
+              id="harcamaYapilanMiktar"
+            />
+          </div>
+
+          <div style="text-align: center">
+            <button id="kaydet">KAYDET</button>
+          </div>
+        </div>
+      </div>
+
+      <div >
+
+        <table class="table" style=" border: 1px solid #ddd; width:100%">
+            <tr>
+                <th>Tarih</th>
+                <th>Harcanan Yer</th>
+                <th>Miktar</th>
+            </tr>
+        </table>
+      </div>
+
+      
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
