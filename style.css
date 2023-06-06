@@ -11,8 +11,7 @@
     height: 350px;
 }
 .container {
-    height: 100vh;
-    max-width: calc(50vw - 200px);
+    max-width: calc(50vw - 100px);
     min-width: 350px;
     margin: 20px auto;
     /* background-color: aqua; */
@@ -80,7 +79,7 @@
 }
 
 .table{
-    padding: 1rem;
+    padding: 0.5rem;
     border: 1px solid black;
     margin-top: 1rem;
    
@@ -88,7 +87,32 @@
 
 tr, th{
     text-align: left;
+    width: 100px;
+    padding: 0.5rem;
   
   
 }
 
+.gelir-gider{
+    display: flex;
+    justify-content: end;
+}
+.gelir-gider-table{
+    pad: 3rem;
+}
+
+
+.gelir-gider-table tr:nth-child(even){background-color: #ddd;}
+
+.gelir-gider-table tr:nth-child(odd){background-color: #f2f2f2;}
+
+
+
+#temizle{
+    padding: 1rem;
+    cursor: pointer;
+    background-color: rgb(236, 85, 115);
+    border: none;
+    border-radius: 0.2rem;
+
+}

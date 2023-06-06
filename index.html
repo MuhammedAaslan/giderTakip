@@ -63,25 +63,45 @@
               id="harcamaYapilanMiktar"
             />
           </div>
-
           <div style="text-align: center">
             <button id="kaydet">KAYDET</button>
           </div>
         </div>
       </div>
 
-      <div >
-
-        <table class="table" style=" border: 1px solid #ddd; width:100%">
-            <tr>
-                <th>Tarih</th>
-                <th>Harcanan Yer</th>
-                <th>Miktar</th>
-            </tr>
+      <div>
+        <table class="table" style="border: 1px solid #ddd; width: 100%">
+          <tr>
+            <th>Tarih</th>
+            <th>Harcanan Yer</th>
+            <th>Miktar</th>
+          </tr>
         </table>
       </div>
 
-      
+      <div class="gelir-gider">
+
+      <table style="margin-top: 2rem;" class="gelir-gider-table">
+        <tr id="gelirMi">
+          <th>Geliriniz</th>
+          <td><span id="gelirinizSpan">: 0 ₺</span></td>
+        </tr>
+        <tr>
+          <th>Gideriniz</th>
+          <td><span id="giderinizSpan">: 0 ₺</span></td>
+        </tr>
+        <tr>
+          <th>Kalan</th>
+          <td><span id="kalanSpan">: 0 ₺</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="text-align: center;" class="last-button">
+
+    <button id="temizle">Bilgileri Temizle</button>
+
+</div>
     </div>
 
     <script src="js.js"></script>
